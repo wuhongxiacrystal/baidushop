@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,li{
+			margin:0;
+			list-style:none;
+			padding:0;
+		}
+		a{
+			text-decoration:none; 
+		}
+		.out{
+			height:auto;
+			width:100%;
+			min-width:995px;
+			overflow: hidden;
+		}
+		.out .left{
+			width:60%;
+			float:left;
+		}
+		.out img{
+			float:left;
+		}
+		.out .left img{
+			width:100%;
+			height:100%;
+		}
+		.out .right{
+			width:40%;
+			float:left;
+		}	
+		.out .right img:first-child{
+			width:100%;
+		}
+		.out .right img:nth-child(1)~img{
+			width:50%;
+		}	
+  		.lt{
+  			float:left;
+  		}
+  		.rt{
+  			float:right;
+  		}
+
+
+  		.goods{
+            height:540px;
+            margin:0 auto;
+  		}
+		.goods .goods-left{
+			width:220px;
+			height:100%;
+			margin-right:25px; 
+		}
+		.goods .goods-right{
+			 height:100%;
+			 position:relative;
+			 overflow:hidden;
+		}
+		.goods .goods-right li{
+			width:198px;
+			height:230px;
+			padding:20px;
+			float:left;
+		}
+
+		.goods .goods-right li:nth-child(1),.goods .goods-right li:nth-child(3){\
+			width:198px;
+			height:229px;
+			padding:20px;
+			float:left;
+			border-bottom:1px solid #eee;
+		}
+		.goods .goods-right li a{
+			color:#333;
+		}
+		.goods .goods-right li a img{
+			width:138px;
+			height:138px;
+			float:left;
+		}
+		.goods .goods-right li a{
+			float:left;
+			height:229px; 
+		}
+		.goods .goods-right li a p.goods-name{
+			height:24px;
+			line-height: 24px;
+			font-size:16px;
+		}
+		.goods .goods-right li a p.goods-brif{
+			font-size:12px;
+			color:#999999; 
+		}
+		.goods .goods-right li a p.goods-price{
+			font-size: 16px;
+			margin: 11px 0 2px -5px;
+		}
+		.goods .goods-right li a p.goods-price span{
+			font-weight:700; 
+		}
+		.goods .goods-right li a p.goods-hot{
+			width: 48px;
+   			background: #ee3531;
+   			height: 18px;
+   			color: #fff;
+   			line-height: 18px;
+   			font-size: 12px;
+   			text-align:center; 
+		}
+		.goods .goods-right li:nth-child(4){
+			position:absolute;
+			bottom:0px;
+			left:0px;
+		}
+		@media screen and (min-width:1200px){
+			.goods{
+				width:1200px;
+			}
+			.goods .goods-right{
+				width:955px; 
+			}
+			.goods .goods-right li.goods-two{
+				width:426px;
+				height:500px;
+				padding:20px 25px; 
+				border-left:1px solid #eee;
+				border-right:1px solid #eee; 
+			}
+			.goods .goods-right li.goods-two img{
+				width:359px;
+				height:398px;
+			}
+		}
+		@media screen and (max-width:1200px){
+			.goods{
+				width:955px;
+			}
+			.goods .goods-right{
+				width:710px; 
+			}
+			.goods .goods-right li{
+				/*width:234px;*/
+				padding:0px;
+				border-right:1px solid #eee;
+				border-bottom:1px solid #eee;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		<div class="left">
+			<img src="images/ban-3.jpg" alt="">
+		</div>
+		<div class="right">
+			<img src="images/ban-5.jpg" alt="">
+			<img src="images/ban-6.jpg" alt="">
+			<img src="images/ban-7.jpg" alt="">
+		</div>
+	</div>
+
+	<div class="goods">
+		<div class="goods-left lt">
+			<a href="javascript:;"><img src="images/good1.jpg" alt=""></a>
+		</div>
+		<ul class="goods-right rt">
+			<li>
+				<a href="javascript:;">
+				   	<!-- <p class="goods-name">绿诺Nanoleaf Bloom灯</p>
+					<p class="goods-brif">谁说省电就不能比颜值</p>
+					<p class="goods-price">￥<span>198</span></p>
+					<p class="goods-hot">热卖</p> -->
+					<img src="images/good2.png" alt="">
+
+				</a>
+			</li>
+			<li class="goods-two"><a href="javascript:;"><img src="images/good4.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/good5.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/good3.png" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/good6.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/good8.jpg" alt=""></a></li>
+		</ul>
+	</div>
+</body>
+</html>
